@@ -1,0 +1,25 @@
+            {% extends 'base.html' %}
+            {% block titre %} Login {% endblock %}
+        <!-- news-->
+        {% block content %}
+        <section class="page-section" id="news">
+            <div class="container">
+                <div class="text-center fs-2">
+                    <h2 class="section-heading text-uppercase">Liste de messages</h2>
+
+                    {% if donnee_csv %}
+                   
+                    {% for e in donnee_csv %}
+                      <p>{{e[0]}} a ecrit : {{e[3]}} a {{e[4]}}</p>
+                    {% endfor %}
+                   
+                  {% else %}
+                    <p>Aucun élément</p>
+                  {% endif %}
+
+                </div>
+            </div>
+        </section>
+        {% endblock %}
+        
+
