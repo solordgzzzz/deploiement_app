@@ -1,0 +1,7 @@
+pip install csv
+pip install os 
+pip install flask
+pip install datetime
+pip install hashlib
+pip install random 
+pip install secrets
